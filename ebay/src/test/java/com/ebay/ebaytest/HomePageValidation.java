@@ -1,22 +1,24 @@
-package com.ebaytest;
+package com.ebay.ebaytest;
 
-import com.HomePage;
-import com.peoplentech.TestBase;
+import com.ebay.data.DataProvider;
+import com.ebay.pages.HomePage;
+import com.ebay.peoplentech.TestBase;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-public class HomePageValidation extends TestBase {
+public class HomePageValidation extends TestBase{
 
-    @Test
+    @Test(enabled = false)
     public void validateUserBeingAbleToTypeOnSearchBar() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.typeOnSearchBar();
+        homePage.typeOnSearchBar("Toys");
     }
 
-    @Test
-    public void validateUserBeingAbleToSearchForAnItem() {
+    @Test(dataProviderClass = DataProvider.class,dataProvider = "searchData")
+    public void validateUserBeingAbleToSearchForAnItem(String data) {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.typeOnSearchButton();
+        homePage.typeOnSearchBar(data);
+        homePage.clickOnSearchButton();
 
     }
 

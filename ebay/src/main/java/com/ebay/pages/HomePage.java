@@ -1,4 +1,4 @@
-package com;
+package com.ebay.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,11 +26,11 @@ import org.openqa.selenium.support.FindBy;
         private WebElement sell;
 
 
-        public void typeOnSearchBar(){
-            searchBar.sendKeys("Java Books");
+        public void typeOnSearchBar(String data){
+            searchBar.sendKeys(data);
         }
 
-        public void typeOnSearchButton(){
+        public void clickOnSearchButton(){
             searchButton.click();
         }
 

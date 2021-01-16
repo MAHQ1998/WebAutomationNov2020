@@ -1,4 +1,4 @@
-package com.report;
+package com.ebay.report;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import org.testng.ITestContext;

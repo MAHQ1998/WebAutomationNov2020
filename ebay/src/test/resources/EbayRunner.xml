@@ -16,7 +16,7 @@
 
     <test name="Automation tests">
         <classes>
-            <class name="com.ebaytest.HomePageValidation"/>
+            <class name="com.ebay.ebaytest.HomePageValidation"/>
         </classes>
     </test>
 </suite>

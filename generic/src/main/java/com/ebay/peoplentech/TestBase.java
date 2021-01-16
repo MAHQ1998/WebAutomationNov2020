@@ -1,10 +1,10 @@
-package com.peoplentech;
+package com.ebay.peoplentech;
 
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
-import com.report.ExtentManager;
-import com.report.ExtentTestManager;
+import com.ebay.report.ExtentManager;
+import com.ebay.report.ExtentTestManager;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;

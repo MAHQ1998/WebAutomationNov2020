@@ -1,4 +1,4 @@
-package com;
+package com.ebay.pages;
 
 public class LoginPage {
 

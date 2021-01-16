@@ -1,4 +1,4 @@
-package com.ebaytest;
+package com.ebay.ebaytest;
 
 public class LoginPageValidation {
 }
